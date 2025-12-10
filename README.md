@@ -1,7 +1,7 @@
 # Weather-proj
 weather app with js
 
--[Demo Project](https://mohananoruztabar.github.io/Parallax-website1/)
+-[Demo Project](https://mohananoruztabar.github.io/Weather-app/)
 
 -🙋🏽‍♀️ Developed by Mohana Noruztabar
 
