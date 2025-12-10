@@ -22,7 +22,7 @@ function changeBackgroundVideo(weatherMain){
             bgVideo.src = "assets/video/0_Blue_Sky_sunny.mov";
             break;
         case "Clouds":
-            bgVideo.src = "assets/video/0_Clouds_Sky_3840x2160 - Trim.mov";
+            bgVideo.src = "assets/video/0_Clouds_Sky_3840x2160 - Trim.mp4";
             break;
         case "Rain":
             bgVideo.src = "assets/video/istockphoto-rainy.mp4";
@@ -176,5 +176,6 @@ searchBtn.addEventListener('click' , ()=>{
     cheakFore(text)
 
 })
+
 
 
