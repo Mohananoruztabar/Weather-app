@@ -19,7 +19,7 @@ const bgVideo = document.getElementById('bg-video');
 function changeBackgroundVideo(weatherMain){
     switch(weatherMain){
         case "Clear":
-            bgVideo.src = "assets/video/0_Blue_Sky_sunny.mp4";
+            bgVideo.src = "assets/video/0_Blue_Sky_sunny.mov";
             break;
         case "Clouds":
             bgVideo.src = "assets/video/0_Clouds_Sky_3840x2160 - Trim.mov";
@@ -131,7 +131,7 @@ async function DaysWeather(lat, lon) {
 
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         
-        // پیدا کردن اولین داده هر روز
+        
         const seenDays = new Set();
         const dailyForecasts = [];
         
@@ -148,7 +148,7 @@ async function DaysWeather(lat, lon) {
             }
         });
 
-        // نمایش داده‌ها
+        
         dailyForecasts.slice(0, 7).forEach((day, index) => {
             if(weeklyItems[index]){
                 const dayNameEl = weeklyItems[index].querySelector('.day-name');
@@ -157,7 +157,7 @@ async function DaysWeather(lat, lon) {
                 const dayOfWeek = day.date.getDay();
                 
                 dayNameEl.textContent = days[dayOfWeek];
-                dayTempEl.textContent = Math.round(day.temp) + "°C"; // اینجا درست شده
+                dayTempEl.textContent = Math.round(day.temp) + "°C"; 
             }
         });
 
@@ -176,4 +176,5 @@ searchBtn.addEventListener('click' , ()=>{
     cheakFore(text)
 
 })
+
 
